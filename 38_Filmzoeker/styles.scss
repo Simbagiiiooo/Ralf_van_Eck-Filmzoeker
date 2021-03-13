@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-image: linear-gradient(to right top, #202f44, #262e4a, #2f2d4e, #3b2a4f, #48254e);
+}
+
+.nav{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 10rem;
+    margin: 0 auto 1rem auto;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right top, #086afd, #00a3ff, #00c7e9, #00e087, #a8eb12);
+    border: 0.3rem solid black;
+    color: black;
+    &  input{
+        height: 1rem;
+        width: 1rem;
+    }
+    }
+
+.search-bar{
+    color: black;
+    width: 16.5rem;
+    border: 0.2rem solid black;
+    margin: 0 auto 0 auto;
+    & input{
+        width: 16rem;
+        height: 1.65rem;
+        font-size: 1.2rem;
+    }
+}
+
+h1 {
+    animation: jackInTheBox;
+    animation-duration: 1s;
+    text-decoration: underline;
+    font-size: 3rem;
+    text-align: center;
+    color: #48dbfb;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    & li{
+        padding: 1rem;
+}}
+
+
+.footer {
+    height: 5rem;
+    &__text {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+        text-align: center;
+        color: #48dbfb;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .nav {
+        // flex-direction: row; 
+        // width: auto;
+        margin: 0 auto 1rem auto;
+        font-size: 2.4rem;
+        width: 16rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .footer {
+        &__text {
+            font-size: 2.5rem;
+        }
+    }
+
+}
+

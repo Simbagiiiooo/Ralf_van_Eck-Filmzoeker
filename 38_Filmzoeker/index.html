@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmzoeker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oi&family=Yanone+Kaffeesatz:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer type="text/javascript" src="movie_database.js"></script>
+    <script defer type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Filmzoeker</h1>
+        <nav>
+            <div class="nav">
+                <div>
+                    <input type="radio" class="radiobtn" id="nav__new" name="filter-movie" value="new">
+                    <label for="new">New movies</label>
+                </div>
+                <div>
+                    <input type="radio" class="radiobtn" id="nav__x-men" name="filter-movie" value="x-men">
+                    <label for="x-men">X-Men movies</label>
+                </div>
+                <div>
+                    <input type="radio" class="radiobtn" id="nav__avengers" name="filter-movie" value="avengers">
+                    <label for="avengers">Avengers movies</label>
+                </div>
+                <div>
+                    <input type="radio" class="radiobtn" id="nav__batman" name="filter-movie" value="batman">
+                    <label for="batman">Batman movies</label>
+                </div>
+                <div>
+                    <input type="radio" class="radiobtn" id="nav__princess" name="filter-movie" value="princess">
+                    <label for="princess">Princess movies</label>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movie...and hit Enter.." class="input">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="new-movie-list">
+
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__text">Copyright© 2021</h3>
+    </footer>
+</body>
+
+</html>
